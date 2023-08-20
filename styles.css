@@ -1,0 +1,190 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f5f5dc;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pre-login-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.pre-login-screen img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#welcome {
+  text-align: center;
+  padding: 300px;
+}
+
+#welcome img {
+  height: 100px;
+}
+
+/*!---------------------------  HEADER --------------------- */
+
+.header {
+  height: 80px;
+  background-color: #ffe17b;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#login-form {
+  display: flex;
+  gap: 10px;
+  margin-right: 70px;
+}
+
+#login-btn,
+#logout-button {
+  border-radius: 30px;
+  padding: 5px 10px;
+  width: 80px;
+  background-color: #c51605;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#login-btn:hover {
+  background-color: #fff;
+  color: #c51605;
+}
+
+header p {
+  padding-right: 10px;
+}
+
+.navigation a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation a {
+  color: #c51605;
+  font-size: 22px;
+}
+
+/*!---------------------------  CONTENT --------------------- */
+
+.content {
+  min-height: calc(100% - 120px);
+  margin-bottom: 30px;
+}
+
+/*!---------------------------  FOOTER --------------------- */
+
+.footer {
+  height: 80px;
+  padding: 10px;
+  background-color: #c51605;
+  color: #fff;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+/*!---------------------------  HOME --------------------- */
+
+.welcome-in {
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-slider {
+  width: 100vw;
+  height: 700px;
+  position: relative;
+  object-fit: cover;
+}
+
+.slide {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100vw;
+  height: 100%;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 70px;
+}
+
+/* .post-login-content {
+  display: none;
+}*/
+
+/*!---------------------------  ABOUT --------------------- */
+
+#about-us {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-us p {
+  margin-top: 0;
+}
+
+#direction-btn {
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 15px 40px;
+  width: auto;
+  text-align: center;
+  background-color: #c51605;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+#direction-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#direction-btn:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#direction-btn:hover a {
+  color: #c51605;
+}

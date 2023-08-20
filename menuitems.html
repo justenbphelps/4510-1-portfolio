@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Portfolio Project</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="media/burger.svg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="navigation">
+        <a href="index.html" class="nav-link">Home - </a>
+        <a href="about.html" class="nav-link">About -</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+      </div>
+      <form id="login-form">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button id="login-btn" type="submit">Login</button>
+      </form>
+      <div>
+        <button id="logout-button" class="post-login-content">Log Out</button>
+      </div>
+    </header>
+    <div id="welcome">
+      <h1>Please log in with administrative credentials</h1>
+      <img src="media/burger.svg" alt="burger" />
+    </div>
+    <div class="post-login-content">
+      <!-- Food Menu Item Form -->
+      <div id="menu-form-container">
+        <h1>Food Menu Item Form</h1>
+        <form id="menu-form">
+          <label for="item">Item:</label>
+          <input type="text" id="item" required /><br />
+
+          <label for="description">Description:</label>
+          <textarea id="description" required></textarea><br />
+
+          <label for="price">Price:</label>
+          <input type="number" id="price" required /><br />
+
+          <button id="submit-menu">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div id="menu-items"></div>
+
+    <footer class="footer">
+      <p>Caitlyn Eno</p>
+      <p>University of Denver ICT 4510 Portfolio Assignment</p>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
