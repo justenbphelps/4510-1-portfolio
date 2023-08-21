@@ -101,14 +101,16 @@ document
         .then((data) => {
           console.log("API Response:", data); // Log the API response
 
-          if (Array.isArray(data)) {
-            console.log("Menu items:", data); // Log the extracted menu items
+          if (Array.isArray(data?.menu)) {
+            const items = data?.menu;
+            console.log("Menu items:", items); // Log the extracted menu items
 
             // Clear existing menu items
-            menuItemsContainer.innerHTML = "";
+            // menuItemsContainer.innerHTML = "";
 
             // Render fetched menu items
-            data.forEach((menuItem) => {
+            items.forEach((menuItem) => {
+              console.log(menuItem)
               const itemElement = document.createElement("div");
               itemElement.classList.add("menu-item");
               itemElement.innerHTML = `
@@ -117,7 +119,6 @@ document
           <p>Price: $${menuItem.price}</p>
         `;
               menuItemsContainer.appendChild(itemElement);
-              menuItemsContainer.appendChild(itemDiv);
             });
           } else {
             console.error("Invalid menu items response:", data);
@@ -127,6 +128,11 @@ document
     }
   });
 //! menu items ---------------------------------------
+
+// menu page stuff
+window.addEventListener('load', function(event) {
+    console.log('load')
+});
 
 //! SLIDER ---------------------------------------
 const slides = document.querySelectorAll(".slide");
